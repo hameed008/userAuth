@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Session
 app.use(session({
-  secret: process.env.SECRET_KEY,
+  secret: abcdefgherysjndfyyjigg,
   resave: false,
   saveUninitialized: false,
   store: new MongoStore({ mongoUrl: 'mongodb://localhost:27017/sessionDB2' }),
@@ -42,9 +42,10 @@ app.use(authRoutes);
 
 // MongoDB Connection
 
-const DATABASE_NAME = process.env.DATABASE_NAME
-const USERNAME = process.env.DB_USERNAME;
-const PASSWORD = process.env.DB_PASSWORD;
+const DATABASE_NAME = authDB
+const USERNAME = hameed;
+const PASSWORD = B0neLZcuxfY5aO7a
+//const PASSWORD = process.env.DB_PASSWORD;
 connectDB(DATABASE_NAME, USERNAME, PASSWORD);
 
 //console.log('seven')
