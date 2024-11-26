@@ -6,7 +6,6 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   is_admin: { type: Boolean, default: false },
   is_logged_in: { type: Boolean, default: false },
-  machine_id: { type: String, default: null }
 });
 
 // Hash the password before saving
