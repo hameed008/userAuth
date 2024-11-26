@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build files
+dist/
+build/
+
+# .env files
+/client/.env
+/server/.env
+
+# Other ignores
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
